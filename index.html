@@ -12,6 +12,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+  
+      @media (max-width: 576px) {
+        .img-fluid {
+          width: auto;
+          height: 50%;
+        }
+      }
+    </style>
     
 </head>
 <body>
@@ -105,6 +119,7 @@
 <body>
     <section class="hero">
         <div class="container">
+          <h1>Officers</h1>
             <div class="row">
                 <div class="col-md-4">
                     <div class="hero-image">
@@ -128,8 +143,76 @@
             </div>
         </div>
     </section>
-</body>
-</html>
+
+
+
+
+ <!-- features -->
+ <section id="features" class="features">
+  <div class="container">
+    <h1>Results and Announcments</h1>
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xl-6 mt-4 align-items-center justify-content-center d-flex align-text-center">
+        <div class="card">
+          <div class="card-body">
+            <p><img src="assets/img/mdi_announcement.png" alt="" class="img-card">Higher secoundry school part-II annual examination</p>
+          </div>
+        </div>
+        <br>
+      </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+    <div class="container">
+      <h1 class="text-center">Contact Form</h1>
+      <img src="https://i.imgur.com/example.png" alt="Contact form image" class="img-fluid mx-auto d-block">
+  
+      <form action="/action_page.php">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  
+    <script>
+      // Get the width and height of the browser window
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+  
+      // Update the layout of the page
+      const updateLayout = () => {
+        // Get the image element
+        const image = document.querySelector('img');
+  
+        // Set the width and height of the image to fit the browser window
+        image.width = width;
+        image.height = height;
+      };
+  
+      // Add a resize event listener to the window
+      window.addEventListener('resize', updateLayout);
+  
+      // Update the layout of the page on initial load
+      updateLayout();
+    </script>
 
 
 
