@@ -78,4 +78,23 @@
   }
 
 
-  
+
+
+ /* styles.css */
+.hero {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-description {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
